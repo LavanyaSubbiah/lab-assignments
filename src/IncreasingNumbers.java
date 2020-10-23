@@ -11,21 +11,18 @@ public class IncreasingNumbers {
 	 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub   
-		int num;
-		Scanner sc=new Scanner(System.in);
-		//3
-	       System.out.println("Enter a number : ");
-	       num = sc.nextInt();
-	        boolean result=checknumber(num);
-	 if(result==true)
-	 {
+	int num;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter a number : ");
+	num = sc.nextInt();
+	boolean result=checknumber(num);
+	 if(result==true){
 		 System.out.println("true");
 	 }
-	 else
-	 {
+	 else{
 		 System.out.println("false");
 	 }
-	       }
+	 }
 	
 
 	private static boolean checknumber(int num) {
