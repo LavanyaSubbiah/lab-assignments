@@ -8,23 +8,7 @@
 import java.util.*;
 public class RemoveDuplicates {
 static int number=0;
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-          Scanner sc=new Scanner(System.in);
-          System.out.println("Enter the number of elements");
-          number=sc.nextInt();
-          System.out.println("Enter the total number of elements in an array");
-          int[] array=new int[number];
-          for(int i=0;i<number;i++)
-          {
-        	  array[i]=sc.nextInt();
-          }
-          modifyArray(array);
-          
-          
-	}
-	private static void modifyArray(int[] array) {
-		// TODO Auto-generated method stub
+private static void modifyArray(int[] array) {
 		Set<Integer> tree_Set=new TreeSet<>();
 		int count=0,flag=0;
 		for(int i=0;i<number;i++)
@@ -48,5 +32,21 @@ static int number=0;
 		}
 		
 	}
+	public static void main(String[] args) {
+          Scanner sc=new Scanner(System.in);
+          System.out.println("Enter the number of elements");
+          number=sc.nextInt();
+          System.out.println("Enter the total number of elements in an array");
+          int[] array=new int[number];
+          for(int i=0;i<number;i++)
+          {
+        	  array[i]=sc.nextInt();
+          }
+          modifyArray(array);
+         sc.close();
+          
+          
+	}
+	
 
 }

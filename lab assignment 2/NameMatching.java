@@ -7,7 +7,6 @@
 public class NameMatching {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
       String[][] name= {
     		  {"Mr","Mrs","Ms"},
     		  {"Prateek","Surya","Aishwarya","Rohan","Leena"}

@@ -6,9 +6,13 @@
  */
 import java.util.*;
 public class SecondSmallest {
+private static int getSecondSmallest(int[] array) {
+		Arrays.sort(array);// sorts the array 
+		int res=array[1];// gives the second largest elements in array
+		return array[1];
+	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the number of elements");
 		int Number=sc.nextInt();
@@ -19,14 +23,8 @@ public class SecondSmallest {
 		}
 		int result=getSecondSmallest(array);
 		System.out.println("The second smallest element is "+result);
-
+                                      sc.close();
 	}
 
-	private static int getSecondSmallest(int[] array) {
-		// TODO Auto-generated method stub
-		Arrays.sort(array);// sorts the array 
-		int res=array[1];// gives the second largest elements in array
-		return array[1];
-	}
-
+	
 }

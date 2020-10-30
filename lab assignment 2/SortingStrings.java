@@ -7,22 +7,7 @@
 import java.util.*;
 public class SortingStrings {
    static int number=0;
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-     Scanner sc=new Scanner(System.in);
-     System.out.println("Enter the number of elements");
-     number=sc.nextInt();
-     System.out.println("Enter the number of array elements:");
-     String[] array=new String[number];
-     for(int i=0;i<number;i++)
-     {
-    	 array[i]=sc.next();
-     }
-     sortStrings(array);
-	}
-
-	private static void sortStrings(String[] array) {
-		// TODO Auto-generated method stub
+private static void sortStrings(String[] array) {
 		Arrays.sort(array);
 		String[] resultArray=new String[number];
 		if(number%2==0)
@@ -56,5 +41,21 @@ public class SortingStrings {
 		}
 		
 	}
+	public static void main(String[] args) {
+		
+     Scanner sc=new Scanner(System.in);
+     System.out.println("Enter the number of elements");
+     number=sc.nextInt();
+     System.out.println("Enter the number of array elements:");
+     String[] array=new String[number];
+     for(int i=0;i<number;i++)
+     {
+    	 array[i]=sc.next();
+     }
+     sortStrings(array);
+     sc.close();
+	}
+
+	
 
 }

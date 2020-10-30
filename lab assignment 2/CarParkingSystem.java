@@ -93,6 +93,7 @@ public class CarParking{
 		default:
 			System.out.println("Try again!");
 		}
+                    sc.close();
 	}
 class CarDetails{ 
 	public String ownerName;
