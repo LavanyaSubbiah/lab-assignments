@@ -7,16 +7,7 @@
  */
 import java.util.*;
 public class PositiveString {
-
-	public static void main(String[] args) {
-	Scanner sc=new Scanner(System.in);
-	System.out.println("Enter the word");
-	String word=sc.next();
-	boolean result=checkPositiveString(word);
-	System.out.println("The given string is a positive string : "+result);
-	}
-
-	private static boolean checkPositiveString(String word) {
+                      private static boolean checkPositiveString(String word) {
 		String str="";
 		char[] Array=word.toCharArray();
 	    Arrays.sort(Array);//sort all the characters 
@@ -31,5 +22,16 @@ public class PositiveString {
 	    else
 		return false;
 	}
+
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter the word");
+	String word=sc.next();
+	boolean result=checkPositiveString(word);
+	System.out.println("The given string is a positive string : "+result);
+                 sc.close();
+	}
+
+	
 
 }

@@ -6,14 +6,7 @@
  */
 import java.util.*;
 public class SumOfInteger {
-
-	public static void main(String[] args) {
-	Scanner sc=new Scanner(System.in);
-	System.out.println("Enter the String");
-	String number=sc.nextLine();
-	checkNextString(number);
-	}
-    private static void checkNextString(String number) {
+   private static void checkNextString(String number) {
 		StringTokenizer st=new StringTokenizer(number);// adds string into stringtokenizer
 		int sum=0,num=0;
 		System.out.println("The numbers are :");
@@ -25,5 +18,14 @@ public class SumOfInteger {
 		}
 		System.out.println("The sum is : "+sum);// prints the sum of the numbers
 	}
+
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter the String");
+	String number=sc.nextLine();
+	checkNextString(number);
+                  sc.close();
+	}
+ 
 
 }

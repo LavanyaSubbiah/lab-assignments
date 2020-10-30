@@ -6,6 +6,11 @@
  */
 import java.util.*;
 public class MirrorImage {
+private static String getImage(String word) {
+		StringBuilder sb=new StringBuilder(word);
+	    String Image=sb.reverse().toString();       //Converted into mirror image
+	    return Image;
+	}
 
 	public static void main(String[] args) {
 	   Scanner sc=new Scanner(System.in);
@@ -13,12 +18,8 @@ public class MirrorImage {
 	   String word=sc.next();
 	   String mirrorImage=getImage(word);
 	   System.out.println("The Mirror Image is "+word+"|"+mirrorImage);
+                     sc.close();
 	}
 
-	private static String getImage(String word) {
-		StringBuilder sb=new StringBuilder(word);
-	    String Image=sb.reverse().toString();       //Converted into mirror image
-	    return Image;
-	}
-
+	
 }

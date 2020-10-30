@@ -7,18 +7,6 @@
 import java.util.*;
 public class Count {
 
-	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the text");
-		String text=sc.nextLine();
-		int characters=countCharacters(text);
-		System.out.println("The number of characters : " +characters);
-		int words=countWords(text);
-		System.out.println("The number of words : "+words);
-        int lines=countLines(text);
-        System.out.println("The number of Lines : "+lines);
-	}
-
 	private static int countLines(String text) {
 		String[] linesSplit=text.split("\n");
 		int length=linesSplit.length;// count number of lines
@@ -34,6 +22,19 @@ public class Count {
 	private static int countCharacters(String text) {
 		int length=text.length();//finds number of characters
 		return length;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the text");
+		String text=sc.nextLine();
+		int characters=countCharacters(text);
+		System.out.println("The number of characters : " +characters);
+		int words=countWords(text);
+		System.out.println("The number of words : "+words);
+                                    int lines=countLines(text);
+                                    System.out.println("The number of Lines : "+lines);
+                                    sc.close();
 	}
 
 }

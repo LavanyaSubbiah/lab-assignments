@@ -5,17 +5,9 @@
  *desc method which accepts a String and replaces all the consonants in the String with the next alphabet
  */
 import java.util.*;
+
 public class ConsonantsWithNextAlphabet {
-
-	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the word");
-		String word=sc.next();
-		String replacedWord=alterString(word);
-		System.out.println("The replaced String is "+replacedWord);
-	}
-
-	private static String alterString(String word) {
+     private static String alterString(String word) {
 		char[] charArray=word.toCharArray();
 		String addString="";
 		int length=word.length();
@@ -32,6 +24,15 @@ public class ConsonantsWithNextAlphabet {
 			}
 		}
 	       return addString;
+	}
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the word");
+		String word=sc.next();
+		String replacedWord=alterString(word);
+		System.out.println("The replaced String is "+replacedWord);
+                                    sc.close();
 	}
 
 }

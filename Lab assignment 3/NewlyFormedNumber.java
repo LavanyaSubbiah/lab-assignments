@@ -6,18 +6,7 @@
  */
 import java.util.*;
 public class NewlyFormedNumber {
-
-	public static void main(String[] args) {
-    Scanner sc=new Scanner(System.in);
-    System.out.println("Enter the Number");
-    int number=sc.nextInt();
-    String difference = modifyNumber(number);
-    System.out.println("The difference is "+difference);//prints the difference
-    
-
-	}
-
-	private static String modifyNumber(int number) {
+               private static String modifyNumber(int number) {
 		String str=Integer.toString(number);
 	    char[] array=str.toCharArray();
 	    int len=array.length;
@@ -41,4 +30,12 @@ public class NewlyFormedNumber {
 		return newStr;// returns string
 	}
 
+	public static void main(String[] args) {
+                  Scanner sc=new Scanner(System.in);
+                  System.out.println("Enter the Number");
+                   int number=sc.nextInt();
+                   String difference = modifyNumber(number);
+                   System.out.println("The difference is "+difference);//prints the difference
+                   sc.close();
+      }
 }
