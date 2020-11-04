@@ -1,6 +1,6 @@
 package Name;
 
-@SuppressWarnings("serial")
+
 public class NameException extends Exception{
 	/**
 	 * parameterised constructor
