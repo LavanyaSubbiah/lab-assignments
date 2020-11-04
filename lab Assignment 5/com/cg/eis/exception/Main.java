@@ -11,7 +11,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		try {
 			if(salary<3000) {
-				throw new SalaryException("Salary should be above 3000");
+				throw new EmployeeException("Salary should be above 3000");
 			}
 			else {
 				System.out.println("The salary of the employee is "+salary);
